@@ -47,11 +47,68 @@ nano index.js
 ```bash
 npm init -y
 ```
+### output
+```bash
+┌──(kali㉿localhost)-[~/mybot]
+└─$ npm init -y
+Wrote to /home/kali/mybot/package.json:
+
+{
+  "name": "mybot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.21"
+  },
+  "devDependencies": {},
+  "type": "commonjs"
+}
+```
 ## package-lock.json file create command
 ```bash
 npm install
 ```
+### output
+```bash
+┌──(kali㉿localhost)-[~/mybot]
+└─$ npm install
+
+up to date, audited 1 package in 834ms
+
+found 0 vulnerabilities
+```
 ## create node_modules file coomnd
 ```bash
-node_modules
+sudo apt install -y curl && curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash - && sudo apt install -y nodejs
+```
+```bash
+ls
+```
+### output
+```bash
+┌──(kali㉿localhost)-[~/mybot]
+└─$ ls
+auth      node_modules
+package.json   index.js  package-lock.json
+```
+## baileys install
+```bash
+npm install @whiskeysockets/baileys 
+```
+### output
+```bash
+┌──(kali㉿localhost)-[~/mybot]
+└─$ npm install @whiskeysockets/baileys
+
+added 93 packages, and audited 94 packages in 50s                                                                     19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
 ```
